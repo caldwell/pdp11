@@ -2253,7 +2253,6 @@ int writeToFileBin(FILE *foutbin) {
 
   for(i=0; i<BINARRAYSIZE; i++) {
    if(binarray[i] == NULL) {
-    fprintf(foutbin, "%c%c",0,0);
    }else {
     sscanf(binarray[i], "%o", &num);
     lo = num & 0xFF;
