@@ -2257,7 +2257,7 @@ int writeToFileBin(FILE *foutbin) {
     sscanf(binarray[i], "%o", &num);
     lo = num & 0xFF;
     hi = num / 0x100;
-    fprintf(foutbin,"%c%c",hi,lo);
+    fprintf(foutbin,"%c%c",lo,hi);
    }
   }
   return 1;
