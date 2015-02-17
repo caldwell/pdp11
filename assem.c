@@ -2283,8 +2283,8 @@ int writeToFileMap(FILE *foutmap) {
 int openFilesToWrite(char *filenamein, char *filenameout, int numargs) {
   FILE *foutmap;
   FILE *foutbin;
-  char filenamemap[20];
-  char filenamebin[20];
+  char filenamemap[strlen(filenamein)+3+1];
+  char filenamebin[strlen(filenamein)+3+1];
   int i, len;
 
   if(numargs == 3) {
