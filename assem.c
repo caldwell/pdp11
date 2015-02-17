@@ -2379,7 +2379,6 @@ int main (int argc, char *argv[]) {
   printf("\n");
   printf("***************************************\n");
   printf("*   KHAQUEZENGASHEZ PDP-11 Assembler  *\n");
-  printf("* -our shit don't stink               *\n");
   printf("***************************************\n\n");
 
   fin = openFileToRead(argc, argv);
